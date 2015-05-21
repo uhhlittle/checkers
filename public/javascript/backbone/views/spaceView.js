@@ -1,14 +1,16 @@
 var SpaceView = Backbone.View.extend({
     tagName: "div",
-    className: "space",
+    className: "game-space",
 
     events: {
       "click": 'selectSpace'
-    }
+    },
+    
 	initialize: function() {
 		console.log("space view created");
-		this.render()
+		this.render();
 	},
   render: function(){
     
   }
+});
