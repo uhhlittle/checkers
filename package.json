@@ -4,7 +4,8 @@
   "description": "Team commatose",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.12.4"
+    "express": "^4.12.4",
+    "hbs": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
