@@ -22,6 +22,10 @@ body {
   height: 100%;
 }
 
+.game-space:hover {
+  border: 1px solid yellow;
+}
+
 .game-board-row:nth-child(odd) .game-space:nth-child(even) {
   background: gray;
 }
