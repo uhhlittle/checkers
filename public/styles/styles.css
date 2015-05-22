@@ -1,24 +1,35 @@
 body {
-    padding: 50px;
     font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-h1 {
-  color: red;
-  text-align: center;
+.game-board {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
 }
 
-
-.game-board {
-  width: 800px;
-  height: 800px;
-  margin: 0 auto;
+.game-board-row {
+  box-sizing: border-box;
+  height: 12.5%;
 }
 
 .game-space {
   box-sizing: border-box;
-  border: 2px solid black;
   float: left;
   width: 12.5%;
-  height: 12.5%;
+  height: 100%;
+}
+
+.game-space:hover {
+  border: 1px solid yellow;
+}
+
+.game-board-row:nth-child(odd) .game-space:nth-child(even) {
+  background: gray;
+}
+
+.game-board-row:nth-child(even) .game-space:nth-child(odd) {
+  background: gray;
 }
